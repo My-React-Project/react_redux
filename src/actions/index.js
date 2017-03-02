@@ -20,3 +20,8 @@ export function setDiff(value) {
         diff: value
     };
 }
+
+/*
+    한번에 모든 module을 export 할 수 있음.
+    export { INCREMENT, DECREMENT, SET_DIFF, increment, decrement, setDiff }
+*/

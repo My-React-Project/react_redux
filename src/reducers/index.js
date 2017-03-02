@@ -1,3 +1,7 @@
+/*
+    import * as type from '../actions' 이와 같은 방식으로 import 할 수도 있음.
+    사용 시 type.INCREMENT, type.SET_DIFF... 이런 식으로 사용
+*/
 import { INCREMENT, DECREMENT, SET_DIFF } from '../actions';
 // combineReducers : 여러개의 reducer를 한개로 합칠 때 사용 되는 redux 내장 메소드
 import { combineReducers } from 'redux';
@@ -34,6 +38,7 @@ const extra = (state = {value: 'this_is_extra_reducer'}, action) => {
 };
 
 /*
+    combineReducer를 사용하지 않고 counterApp을 정의
     const counterApp = ( state = {}, action ) => {
         return {
             counter: counter(state.counter, action),
